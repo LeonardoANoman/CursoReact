@@ -8,10 +8,15 @@ import NumeroAleatorio from "./components/basicos/NumeroAleatorio";
 import Card from "./components/layout/Card";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
+
+    <Card titulo="#06 - Repetição" cor="#848">
+      <ListaAlunos></ListaAlunos>
+    </Card>
 
     <div className="Cards">
       <Card titulo="#05 - Componente com Filhos" cor="#448">
