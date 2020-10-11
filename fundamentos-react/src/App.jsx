@@ -7,12 +7,17 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import NumeroAleatorio from './components/basicos/NumeroAleatorio'
 import Card from './components/layout/Card'
+import Familia from './components/basicos/Familia'
 
 export default () =>
     <div className="App">
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
+
+        <Card titulo="#05 - Componente com Filhos" cor="#448">
+            <Familia sobrenome="Antunes"/>
+        </Card>
 
         <Card titulo="#04 - Desafio Aleatório" cor="#008">
         <NumeroAleatorio valorMinimo={1} valorMaximo={1000} />
