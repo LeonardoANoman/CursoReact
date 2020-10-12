@@ -10,10 +10,15 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
 
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
+
+    <Card titulo="#08 - Par ou Ímpar" cor="#628">
+      <ParOuImpar numero={20}></ParOuImpar>
+    </Card>
 
     <Card titulo="#07 - Tabela de Produtos" cor="#864">
       <TabelaProdutos></TabelaProdutos>
