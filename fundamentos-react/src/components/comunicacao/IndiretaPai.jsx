@@ -1,17 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import IndiretaFilho from "./IndiretaFilho";
 
 export default (props) => {
-  let nome = "?";
-  let idade = 0;
-  let feio = false;
+  const [nome, setNome] = useState("?");
+  const [idade, setIdade] = useState(0);
+  const [feio, setFeio] = useState(false);
 
-  function fornecerInformacoes(nomeParam, idadeParam, feioParam) {
-    nome = nomeParam;
-    idade = idadeParam;
-    feio = feioParam;
-
-    console.log(nomeParam, idadeParam, nerdParam);
+  function fornecerInfomacoes(nome, idade, feio) {
+    setNome(nome);
+    setIdade(idade);
+    setFeio(feio);
   }
 
   return (
@@ -21,9 +19,9 @@ export default (props) => {
         <span>
           <strong>{idade}</strong>
         </span>
-        <span> {feio ? "Verdadeiro" : "Falso"}!</span>
+        <span> {feio ? "Verdadeiro" : "Falso"}</span>
       </div>
-      <IndiretaFilho quandoClicar={fornecerInformacoes}></IndiretaFilho>
+      <IndiretaFilho quandoClicar={fornecerInfomacoes}></IndiretaFilho>
     </div>
   );
 };
