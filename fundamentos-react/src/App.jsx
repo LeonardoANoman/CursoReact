@@ -15,10 +15,15 @@ import UsuarioInfo from "./components/condicional/UsuarioInfo";
 import DiretaPai from "./components/comunicacao/DiretaPai";
 import IndiretaPai from "./components/comunicacao/IndiretaPai";
 import Input from "./components/formulario/Input";
+import Contador from "./components/contador/Contador";
 
 export default () => (
   <div className="App">
     <h1>Fundamentos React</h1>
+
+    <Card titulo="#12 - Contador" cor="#2B2">
+      <Contador numeroInicial={10}></Contador>
+    </Card>
 
     <Card titulo="#11 - Componente Controlado (Input)" cor="#B2B">
       <Input></Input>
