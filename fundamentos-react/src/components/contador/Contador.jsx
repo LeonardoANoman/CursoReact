@@ -34,7 +34,10 @@ class Contador extends Component {
       <div className="Contador">
         <h2>Contador</h2>
         <Display numero={this.state.numero}></Display>
-        <PassoForm pass={this.state.passo} setPasso={this.setPasso}></PassoForm>
+        <PassoForm
+          passo={this.state.passo}
+          setPasso={this.setPasso}
+        ></PassoForm>
         <Botoes setInc={this.inc} setDec={this.dec}></Botoes>
       </div>
     );
