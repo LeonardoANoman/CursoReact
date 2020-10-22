@@ -20,6 +20,11 @@ export default (props) => {
           icon="plus"
           onClick={props.handleAdd}
         ></IconButton>
+        <IconButton
+          style="info"
+          icon="search"
+          onClick={props.handleSearch}
+        ></IconButton>
         <i className="fa fa-plus"></i>
       </Grid>
     </div>
