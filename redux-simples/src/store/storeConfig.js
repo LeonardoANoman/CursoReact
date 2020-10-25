@@ -1,10 +1,9 @@
-import { createStore, combineReducers} from 'redux'
-import numeros from './reducers/numeros'
+import { createStore, combineReducers } from 'redux'
 
-import numerosReducer from "./reducers/numeros"
+import numerosReducer from './reducers/numeros'
 
 const reducers = combineReducers({
-    numeros: numerosReducer, 
+    numeros: numerosReducer,
 })
 
 function storeConfig() {
