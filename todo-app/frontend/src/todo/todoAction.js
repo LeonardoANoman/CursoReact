@@ -14,3 +14,11 @@ export const serach = () => {
         payload: request
     }
 }
+
+export const add = (description) => {
+    const request = axios.post(URL, {description})
+    return {
+        todo: "TODO_ADDED",
+        payload: request
+    }
+}
