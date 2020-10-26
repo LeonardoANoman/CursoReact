@@ -33,6 +33,7 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.12.1"
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "redux-promise": "^0.5.3"
   }
 }
