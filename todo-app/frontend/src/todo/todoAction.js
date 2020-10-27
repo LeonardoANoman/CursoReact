@@ -17,8 +17,5 @@ export const serach = () => {
 
 export const add = (description) => {
     const request = axios.post(URL, {description})
-    return {
-        todo: "TODO_ADDED",
-        payload: request
-    }
+    return [{todo: "TODO_ADDED", payload: request}, search()]
 }
